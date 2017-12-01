@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Опитування</title>
+    
+</head>
+<body>
+    <form method="POST" action="https://formspree.io/petrivnm@gmail.com">
+    <h1>Чи сподобався вам мультфільм "ПОСІПАКИ"?</h1>
+    <p>
+    <img src="img/minion.jpg" alt="Min">
+    </p>
+        <fieldset>
+        <legend>Хто ви?</legend>
+               <!-- <ol>-->
+                    <!--<li>Стать-->
+                        
+                        <label>
+                            <input type="radio" name="age" value="child" checked="">
+                            дитина
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="age" value="teenager">
+                            підліток
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="age" value="adult" >
+                            дорослий
+                        </label>
+                    <!--</li>-->
+                    <br>
+                    <br>
+                    
+                    
+                        <label>Дата народження:
+                            <input type="date" name="birth" value="2000-01-01" required="">
+                        </label>
+                   
+                    <br>
+                    <br>
+                    
+                        <label>Ви відвідали примєру?
+                            <input type="radio" name="premiere" value="yes" checked="">
+                            так
+                        </label>
+                        <label>
+                            <input type="radio" name="premiere" value="no">
+                            ні
+                        </label>
+                    
+                <!--</ol>-->
+        </fieldset>        
+        
+        <!--ЗАГАЛНІ ВРАЖЕННЯ-->       
+        <fieldset>
+            <legend>Питання по мультфільму?</legend>
+            <br>
+            <p>
+                <img src="img/min1.jpg" alt="Min1">
+            </p>
+
+                <!--<ol start="4">-->
+                    <label>Хто з героїв вам сподобався найбільше?</label>
+                    <br>
+                        <label>
+                            <input type="checkbox" name="best-min" value="BOB" checked="">
+                            БОБ
+                        </label>
+                        <label>
+                            <input type="checkbox" name="best-min" value="KEVIN">
+                            КЕВІН
+                        </label>
+                        <label>
+                            <input type="checkbox" name="best-min" value="STUART">
+                            СТЮАРТ
+                        </label>
+                    <br>
+                    <hr>
+                    <hr>
+                    
+       <!-- <fieldset>
+            <legend>Чи вважаєте Ви посіпак лиходіями?</legend>-->
+                <!--<ol start="8">-->
+                    
+                        <label>
+                            Чи вважаєте Ви посіпак поганцями?
+                            <select name="min-bad">
+                                <option value="bad">Так вони злючі лиходії</option>
+                                <option value="good">Вони прикольні та роботящі</option>
+                                <option value="notbad">Можливо трішечки лихі</option>
+                            </select>
+                        </label>
+                    <br>
+                    <p>
+                        <img src="img/min5.gif" alt="Min5">
+                    </p>
+                    <!--<li>
+                        <label>
+                            Оберіть колір кішки,яка приносить нещастя:
+                            <input type="color" name="cat-color">
+                        </label>
+                    </li>-->
+                <!--</ol>-->
+        <!--</fieldset>-->
+
+                        <label>На скільки сильно Вам сподобались ПОСІПАКИ?(від 0 до 100)?
+                            <input type="range" name="faith" min="0" max="100" step="1">
+                        </label>
+                        <br>
+                        <p>
+                        <img src="img/min3.jpg" alt="min3">
+                        </p>
+                    <!--<li>
+                        <label>
+                            Скільки разів у Вас справджувались забобони?
+                            <input type="number" name="number-superstitions" min="0" value="0">
+                        </label>
+                    </li>-->
+                    <br>
+                        <label>
+                            Опишіть свої враження від мультфільму?
+                            <br>
+                            <textarea name="story" rows="4" cols="60" placeholder="Введіть опис..."></textarea>
+                        </label>
+                <!--</ol>-->
+        </fieldset>
+        <br>
+        <fieldset>
+            <!--<legend>Гороскоп</legend>-->
+               <!-- <ol start="10">-->
+                        <label>
+                            Як часто Ви повторно переглядаєте мультфільми?
+                            <select size="3" multiple="">
+                                <option value="never" selected="">Ніколи</option>
+                                <option value="sometimes">Інколи</option>
+                                <option value="often">Часто</option>
+                            </select>
+                        </label>
+                    <label>Чи враховуєте Ви при виборі мультфільму його жанр?</label>
+                        <label>
+                            <input type="radio" name="ganr" value="yes">
+                            так
+                        </label>
+                        <label>
+                            <input type="radio" name="ganr" value="no" checked="">
+                            ні
+                        </label>
+                <!--</ol>-->
+        </fieldset>        
+        <br>
+        <input type="submit" value="Відправити">
+        <input type="reset" value="Скасувати">
+         </form>
+    <br>
+    <a href="cinema-fox.html">Кінотеатр Лисичка</a>
+        
+    
+ 
+  
+    
+</body>
+</html>
